@@ -8,7 +8,7 @@ find_name()
     echo " Введите имя файла: "
     read file_name
     echo " Результаты поиска: "
-    find $dir -name $file_name
+    find $dir -name "$file_name"
     next_step 1
 }
 
@@ -119,6 +119,10 @@ main_menu()
 
 }
 
+echo "Обёртка для утилиты find"
+echo "Автор: Владислав Загородский"
+echo "Скрипт предназначен для поиска файлов с помошью утилиты find по имени или размеру"
+echo "------------------------------"
 main_menu 
 
 
